@@ -16,6 +16,14 @@ class CircleTests(TestCase):
         mock_circle = Circle(radius=mock_radius)
         self.assertEqual(mock_circle.area(), expected_area)
 
+
+    def test_circle_area_raises_ValueError_with_negative_radius(self):
+        """
+        Tests that a Circle object with a negative radius raises a ValueError
+        """
+        with self.assertRaises(ValueError):
+            mock_circle = Circle(radius=-1.0)
+
 class RectangleTests(TestCase):
     """
     Contains all the unit tests for the shapes_module.Rectangle class
