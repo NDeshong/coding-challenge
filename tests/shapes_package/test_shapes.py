@@ -3,7 +3,7 @@ from shapes_library.shapes_package.shapes_module import Circle
 from shapes_library.shapes_package.shapes_module import Rectangle
 
 
-class CircleTests(TestCase):
+class CircleTests(TestCase): 
     """
     Contains all unit tests for the shapes_module.Circle class
     """
@@ -15,7 +15,6 @@ class CircleTests(TestCase):
         expected_area = 78.54
         mock_circle = Circle(radius=mock_radius)
         self.assertEqual(mock_circle.area(), expected_area)
-
 
 class RectangleTests(TestCase):
     """
